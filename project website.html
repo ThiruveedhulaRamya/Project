@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venky Hospital</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #005f99;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #004a7c;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/free-photo/medical-banner-with-doctor-working-laptop_23-2149611236.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f0f8ff;
+    }
+
+    .section h2 {
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services ul li {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .extra-services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .extra-services div {
+      background-color: #e6f2ff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+
+    .doctors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .doctor-card {
+      background-color: #f1f9ff;
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .doctor-card img {
+      width: 100%;
+      border-radius: 50%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .appointment-form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .appointment-form input, .appointment-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Venky Hospital</h1>
+    <p>We Care for Your Health</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#appointment">Appointment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to Venky Hospital</h2>
+    <p>Your Health is Our Priority</p>
+    <a href="#appointment" class="btn">Book Appointment</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Venky Hospital is a multi-specialty healthcare center located in Hyderabad, India. Our mission is to provide quality and affordable medical care to every individual. We have a team of experienced doctors and modern facilities to serve our patients better.</p>
+  </section>
+
+  <section class="section services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Emergency Care</li>
+      <li>General Surgery</li>
+      <li>Cardiology</li>
+      <li>Pediatrics</li>
+      <li>Orthopedics</li>
+    </ul>
+    <div class="extra-services">
+      <div>24/7 Pharmacy</div>
+      <div>Blood Bank</div>
+      <div>ICU & Ventilator Support</div>
+      <div>Lab Testing</div>
+    </div>
+  </section>
+
+  <section class="section" id="doctors">
+    <h2>Our Doctors</h2>
+    <div class="doctors">
+      <div class="doctor-card">
+        <img src="C:\Users\ramya\OneDrive\Pictures\Camera Roll 3\IMG-20250115-WA0020.jpg" alt="Dr. Bhagya">
+        <h3>Dr. Bhagya</h3>
+        <p>Cardiologist</p>
+      </div>
+      <div class="doctor-card">
+        <img src="C:\Users\ramya\OneDrive\Pictures\Camera Roll 3\IMG-20240116-WA0004.jpg" alt="Dr. Mouni">
+        <h3>Dr. Mouni</h3>
+        <p>Pediatrician</p>
+      </div>
+      <div class="doctor-card">
+        <img src="C:\Users\ramya\OneDrive\Pictures\Dad Pic.jpg" alt="Dr. Rao">
+        <h3>Dr. Rao</h3>
+        <p>Orthopedic Surgeon</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="c:\Users\ramya\Downloads\hospitalpic.jpg">
+      <img src="https://wallpapers.com/images/file/hospital-pictures-jr3m0m31i0o5fil1.jpg"
+      <img src="https://wallpapers.com/images/hd/hospital-pictures-t8kzb9udci24yfo3.jpg"
+    </div>
+  </section>
+  
+  <section class="section" id="appointment">
+    <h2>Book an Appointment</h2>
+    <form class="appointment-form">
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Phone:</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+
+      <label>Message:</label>
+      <textarea rows="4" placeholder="Your message..."></textarea>
+
+      <input type="submit" value="Submit" class="btn">
+    </form>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@venkyhospitals.com</p>
+    <p>Phone: +91 9949486472</p>
+    <p>Address: 123, Main Road, Hyderabad, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Venky Hospital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
